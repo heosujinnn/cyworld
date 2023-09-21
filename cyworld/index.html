@@ -4,6 +4,7 @@
     <title>수진이의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
     <link href="./style/index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3d0dfffd08.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>  
     <div class="background">
@@ -61,10 +62,16 @@
                     </div>
                 </div>
                 <div class="wrapper_right_body">
-                    <iframe src="./game.html"></iframe>
+                    <iframe id="contentFrame" src="./home.html"></iframe>
                 </div>
-
             </div>
+            <!--네비게이션바 생성-->
+            <div class="navigation">
+                <div class="navigation_item" id="menuHome" onclick="menuHome()">홈</div>
+                <div class="navigation_item" id="menuJukebox" onclick="menuJukebox()">쥬크박스</div>
+                <div class="navigation_item" id="menuGame" onclick="menuGame()">게임</div>
+            </div>
+
             </div>
         </div>
     </div>
